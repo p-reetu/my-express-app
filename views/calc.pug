@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div(style='text-align:center')
+        form(action = "/calc" method = "POST")
+            br
+            input(name = "curr" type = "text" required placeholder = "Enter USD or INR")
+            br
+            br
+            input(name = "amount" type = "number" required placeholder = "Amount")
+            br
+            br
+            button(type = "Submit") Convert
+        p
+            h2 #{curr} #{amount} #{equal} #{curr2} #{calcamt}
