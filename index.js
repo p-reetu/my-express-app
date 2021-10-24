@@ -6,7 +6,7 @@ const secret_key = crypto.randomBytes(64).toString('hex');
 
 
 const app = express();
-const port = 3000;
+var port = process.env.PORT || 3000;
 
 const path = require('path');
 
